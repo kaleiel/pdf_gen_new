@@ -106,6 +106,8 @@ export class PDFGenerator {
                 horizontalCursor = this.template.getPadding[1]
             }
         })
+
+        this.doc.save(`${this.template.fileName}.pdf`)
     }
 
     initFont(font: FontDefintion) {
