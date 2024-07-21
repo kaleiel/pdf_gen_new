@@ -275,7 +275,6 @@ export class PDFBlock {
                 } else {
                     vertCdelta += ((line.lines ?? 1)-1) * (line.desc.fontSize ?? defaultFont.fontSize) * template.coeff + line.desc.fontSize/4 * doc.getLineHeightFactor() * template.coeff
                 }
-                console.log(line.text, line.lines)
                 textElementsIndex++
             } else {
                 let image = element
